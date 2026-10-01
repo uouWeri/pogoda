@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Погода</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <main>
+    <form id="form" class="search">
+      <input id="q" type="search" placeholder="Введите город и нажмите Enter" autocomplete="off" aria-label="Город">
+    </form>
+    <p id="error" class="error" hidden></p>
+    <section class="card">
+      <h1 id="city">Загрузка...</h1>
+      <div class="temp" id="temp"></div>
+      <p class="cond" id="cond"></p>
+      <div class="meta"><span id="hum"></span><span id="wind"></span></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
